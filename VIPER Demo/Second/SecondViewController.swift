@@ -26,6 +26,7 @@ class SecondViewController: UIViewController {
     
     private func setup() {
         
+        ///add close button
         let closeButton = UIButton()
         closeButton.setTitle("close", for: .normal)
         closeButton.setTitleColor(.black, for: .normal)
@@ -37,6 +38,7 @@ class SecondViewController: UIViewController {
         
         closeButton.addTarget(self, action: #selector(closeClick), for: .touchUpInside)
         
+        ///add label with text
         let labelText = UILabel()
         labelText.text = "Hi, there! I'm a Second View"
         labelText.textAlignment = .center
