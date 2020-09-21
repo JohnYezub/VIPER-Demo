@@ -16,7 +16,7 @@ protocol SomeRouterProtocol: class {
 
 class SomeRouter: SomeRouterProtocol {
     
-    //  weak var presenter: SomePresenterProtocol?
+     ///gonna weak ref to View
     weak var viewController: SomeViewController!
     
     init(viewController: SomeViewController) {

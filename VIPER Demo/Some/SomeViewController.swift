@@ -9,9 +9,10 @@
 import UIKit
 
 class SomeViewController: UIViewController {
-            
+     
+    ///gonna hold strong ref to presenter
     var presenter: SomePresenter!
-    let configurator = SomeConfigurator()
+    private let configurator = SomeConfigurator()
     
     
     override func viewDidLoad() {
@@ -21,6 +22,7 @@ class SomeViewController: UIViewController {
         configurator.configure(with: self)
     }
     
+    //MARK: UI
     private func setup() {
         let openSecond = UIButton()
         openSecond.setTitle("openSecond", for: .normal)

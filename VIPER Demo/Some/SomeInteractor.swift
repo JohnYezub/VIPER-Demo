@@ -12,7 +12,8 @@ protocol SomeInteractorProtocol: class {
 }
 
 class SomeInteractor: SomeInteractorProtocol {
-        
+     
+     ///gonna weak ref to presenter
     weak var presenter: SomePresenterProtocol!
     
     required init(presenter: SomePresenterProtocol) {

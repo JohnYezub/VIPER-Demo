@@ -15,15 +15,18 @@ class SecondViewController: UIViewController {
             print("ViewController -> presenter")
         }
     }
-    var configurator = SecondConfigurator()
+    
+    private var configurator = SecondConfigurator()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         setup()
         configurator.configure(viewController: self)
     }
     
+    //MARK: UI
     private func setup() {
         
         ///add close button
